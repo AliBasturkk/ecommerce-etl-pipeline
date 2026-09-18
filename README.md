@@ -15,8 +15,7 @@ Bu projede, analitik sistemlerin ihtiyaç duyduğu canlı veri akışını sağl
 2. **Transform (Veri Temizleme & İş Mantığı):**
    * Ham JSON verisi Pandas kütüphanesiyle düzleştirilerek ilişkisel tablo formatına getirilmiştir.
    * Eksik ve `NULL` değerler iş mantığına uygun varsayılan etiketlerle yönetilmiştir.
-   * Liste fiyatı ve yüzde indirim oranı üzerinden nihai satış fiyatı hesaplanarak yeni bir metrik sütun oluşturulmuştur:  
-     $$\text{final\_price} = \text{base\_price} \times \left(1 - \frac{\text{discount\_percentage}}{100}\right)$$
+   * Liste fiyatı ve yüzde indirim oranı üzerinden nihai satış fiyatı hesaplanarak yeni bir metrik sütun oluşturulmuştur.
    * SQL Server veri tiplerine uyum için tip zorlama (type casting) adımları uygulanmıştır.
 
 3. **Load & Orchestration (Staging Katmanı):**
